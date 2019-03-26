@@ -1,4 +1,4 @@
-# flurry
+# flurry plugin for Flutter
 
 A Flutter plugin to use Flurry Analytics. This plugin logs sessions, crash detections, simple event logging, UserId.
 
