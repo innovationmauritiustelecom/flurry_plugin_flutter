@@ -45,11 +45,6 @@
         NSString *userId = (NSString*)arguments[@"userId"];
         [Flurry setUserID:userId];
         result(nil);
-    } else if ([@"appVersion" isEqualToString:call.method]) {
-        NSDictionary *arguments = (NSDictionary*)call.arguments;
-        NSString *appVersion = (NSString*)arguments[@"appVersion"];
-        [Flurry setAppVersion:appVersion];
-        result(nil);
     } else {
         result(FlutterMethodNotImplemented);
     }

@@ -13,3 +13,8 @@
 ## 0.0.4
 
 * Removed setAppVersion function on Android only
+
+
+## 0.0.6
+
+* Removed deprecated API setAppVersion

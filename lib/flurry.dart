@@ -39,12 +39,4 @@ class Flurry {
     await _channel.invokeMethod('userId', args);
     return null;
   }
-
-  static Future<Null> setAppVersion(String appVersion) async {
-    Map<String, dynamic> args = <String, dynamic>{};
-    args.putIfAbsent("appVersion", () => appVersion);
-
-    await _channel.invokeMethod('appVersion', args);
-    return null;
-  }
 }
