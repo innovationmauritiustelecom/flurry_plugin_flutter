@@ -18,3 +18,8 @@
 ## 0.0.6
 
 * Removed deprecated API setAppVersion
+
+
+## 0.0.7
+
+* Android updated to compile sdk 28
