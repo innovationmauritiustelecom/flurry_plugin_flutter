@@ -57,7 +57,7 @@ public class FlurryPlugin implements MethodCallHandler {
     } else if (call.method.equals("logEvent")) {
       String message = call.argument("message").toString();
       // logEvent(message, call.argument("params"));
-      Map<String, String> params = call.argument("params") as? Map<String, String>;
+      Map<String, String> params = call.argument<Map<String, String>>("params");
       FlurryAgent.logEvent(message, params);
       result.success(null);
 
