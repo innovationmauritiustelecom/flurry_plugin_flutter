@@ -34,7 +34,8 @@ class _MyAppState extends State<MyApp> {
           title: const Text('A Flurry plugin example app'),
         ),
         body: Center(
-          child: Text('Should log event. Please close the app and wait a few seconds for events to be sent.'),
+          child: Text(
+              'Should log event. Please close the app and wait a few seconds for events to be sent.'),
         ),
       ),
     );

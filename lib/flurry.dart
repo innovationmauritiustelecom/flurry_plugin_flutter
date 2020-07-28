@@ -11,8 +11,15 @@ class Flurry {
   }
 
   static Future<Null> initialize(
-      {String androidKey = "",
+      {
+
+      /// flurry androidKey
+      String androidKey = "",
+
+      /// flurry iosKey
       String iosKey = "",
+
+      /// enable log flag
       bool enableLog = true}) async {
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("api_key_android", () => androidKey);
@@ -25,6 +32,7 @@ class Flurry {
   }
 
   static Future<Null> logEvent(
+    /// event name
     String message, {
 
     /// witn event params
@@ -38,7 +46,10 @@ class Flurry {
     return null;
   }
 
-  static Future<Null> setUserId(String userId) async {
+  static Future<Null> setUserId(
+
+      /// userId
+      String userId) async {
     Map<String, dynamic> args = <String, dynamic>{};
     args.putIfAbsent("userId", () => userId);
 
