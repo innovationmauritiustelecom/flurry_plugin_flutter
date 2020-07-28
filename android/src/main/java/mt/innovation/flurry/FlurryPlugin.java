@@ -56,7 +56,7 @@ public class FlurryPlugin implements MethodCallHandler {
 
     } else if (call.method.equals("logEvent")) {
       String message = call.argument("message").toString();
-      logEvent(message);
+      logEvent(message, call.argument("params"));
       result.success(null);
 
     } else if (call.method.equals("userId")) {
