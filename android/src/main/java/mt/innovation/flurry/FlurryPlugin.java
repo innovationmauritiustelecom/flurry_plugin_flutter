@@ -30,8 +30,8 @@ public class FlurryPlugin implements MethodCallHandler {
     this.channel.setMethodCallHandler(this);
   }
 
-  private void logEvent(String message) {
-    FlurryAgent.logEvent(message);
+  private void logEvent(String message, Map<String, String> params) {
+    FlurryAgent.logEvent(message, params);
   }
 
   private void setUserId(String userId) {

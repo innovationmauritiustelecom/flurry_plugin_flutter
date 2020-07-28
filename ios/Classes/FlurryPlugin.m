@@ -37,7 +37,7 @@
     } else if ([@"logEvent" isEqualToString:call.method]) {
         NSDictionary *arguments = (NSDictionary*)call.arguments;
         NSString *message = (NSString*)arguments[@"message"];
-        NSDictionary *params = NSString*)arguments[@"params"];
+        NSDictionary *params = (NSDictionary*)arguments[@"params"];
         [Flurry logEvent:message withParameters:params];
         result(nil);
 
