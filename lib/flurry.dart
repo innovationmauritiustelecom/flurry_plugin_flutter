@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 
-class Flurry {
+class FlurryEvent {
   static const MethodChannel _channel = const MethodChannel('flurry');
 
   static Future<String> get platformVersion async {
