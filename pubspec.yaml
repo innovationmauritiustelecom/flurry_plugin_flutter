@@ -1,6 +1,6 @@
 name: flurry_event
 description: A Flutter plugin to use Flurry Analytics. This plugin logs sessions, crash detections, simple event logging, UserId.
-version: 0.1.2
+version: 0.1.3
 author: MT Innovation <innovationmauritiustelecom@gmail.com>
 homepage: https://github.com/domliang/flurry_plugin_flutter
 
