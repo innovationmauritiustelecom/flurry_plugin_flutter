@@ -1,5 +1,5 @@
 # See https://www.dartlang.org/guides/libraries/private-files
-
+.fvm/flutter_sdk
 # Files and directories created by pub
 .dart_tool/
 .packages

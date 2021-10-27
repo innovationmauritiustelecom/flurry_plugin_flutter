@@ -19,8 +19,8 @@ class _MyAppState extends State<MyApp> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     await Flurry.initialize(
-        androidKey: "QX7WZTNJ8468J6SR8DR3",
-        iosKey: "XCCWQH4MCD45JHSM4BYN",
+        androidKey: "VTJK9PMKPZB8WTS4DBK2",
+        iosKey: "2GS6227JS2R3XQC375VX",
         enableLog: true);
     await Flurry.setUserId("userId");
     await Flurry.logEvent("eventName");
@@ -34,7 +34,8 @@ class _MyAppState extends State<MyApp> {
           title: const Text('A Flurry plugin example app'),
         ),
         body: Center(
-          child: Text('Should log event. Please close the app and wait a few seconds for events to be sent.'),
+          child: Text(
+              'Should log event. Please close the app and wait a few seconds for events to be sent.'),
         ),
       ),
     );
